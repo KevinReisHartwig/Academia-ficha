@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+.exercise-list {
+    list-style-type: none;
+    padding: 0;
+}
+.exercise-list li {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.exercise-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.exercise-details {
+    font-size: 16px;
+}
+h1, h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .exercise-name {
+        font-size: 16px;
+    }
+    .exercise-details {
+        font-size: 14px;
+    }
+}
+.nav-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+    background-color: #0056b3; /* Cor de fundo alterada ao passar o mouse */
+}
