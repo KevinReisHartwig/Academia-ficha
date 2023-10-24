@@ -1,44 +1,35 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
+/* Reset de estilos */
+* {
     margin: 0;
     padding: 0;
-}
-.exercise-list {
-    list-style-type: none;
-    padding: 0;
-}
-.exercise-list li {
-    margin-bottom: 20px;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-}
-.exercise-name {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-.exercise-details {
-    font-size: 16px;
-}
-h1, h2 {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-    .exercise-name {
-        font-size: 16px;
-    }
-    .exercise-details {
-        font-size: 14px;
-    }
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333; /* Texto em preto para contraste */
+    line-height: 1.6;
+    margin: 0;
 }
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #007BFF; /* Azul */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
 .nav-buttons {
     text-align: center;
     margin-top: 20px;
@@ -47,13 +38,97 @@ h1, h2 {
 .nav-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto */
+    background-color: #0056b3; /* Tom de azul mais escuro */
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
+    margin-right: 10px;
+    transition: background-color 0.3s;
 }
 
 .nav-button:hover {
-    background-color: #0056b3; /* Cor de fundo alterada ao passar o mouse */
+    background-color: #004096; /* Tom de azul mais escuro no hover */
+}
+
+/* Estilos da seção de exercícios */
+section {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com opacidade */
+    color: #333; /* Texto em preto para contraste */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+h2 {
+    font-size: 28px;
+    color: #007BFF; /* Azul para títulos */
+    margin-bottom: 10px;
+}
+
+.exercise-list {
+    list-style: none;
+    padding: 0;
+}
+
+.exercise-list li {
+    border: 1px solid #ccc; /* Borda cinza para contraste */
+    background-color: #fff; /* Fundo branco */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-list li:hover {
+    background-color: #f9f9f9; /* Tom de cinza no hover */
+    transform: scale(1.02);
+}
+
+.exercise-name {
+    font-weight: bold;
+    color: #007BFF; /* Azul escuro */
+}
+
+.exercise-details {
+    color: #555; /* Cinza para detalhes */
+    font-size: 14px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .nav-buttons {
+        text-align: center;
+    }
+
+    .nav-button {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .exercise-list li {
+        padding: 10px;
+    }
+
+    .exercise-name {
+        font-size: 16px;
+    }
+
+    .exercise-details {
+        font-size: 14px;
+    }
 }
