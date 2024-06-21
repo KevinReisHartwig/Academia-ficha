@@ -1,216 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Kevin</title>
+    <link rel="shortcut icon" type="image/png" href="https://png.pngtree.com/png-vector/20200101/ourlarge/pngtree-gym-weight-icon-on-white-background-png-image_2108292.jpg">
+    <title>Treino para Natural</title>
 </head>
+
 <body>
-    <header>
-        <h1>Ficha de Treino 2</h1>
-        <div class="nav-buttons">
-            <a href="index.html" class="nav-button">Ficha 1</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Academia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Ficha ABC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ficha2.html">Ficha ABCDE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+                <form class="d-flex" onsubmit="return false;">
+                    <input class="form-control me-2" type="search" placeholder="Buscar exercício" aria-label="Search" id="search">
+                    <button class="btn btn-outline-success" type="button" onclick="buscarExercicio()">Buscar</button>
+                </form>
+            </div>
         </div>
+    </nav>
+    <header class="bg-primary text-white text-center py-4 mt-5">
+        <h1>Ficha de Treino ABCDE</h1>
     </header>
-    <div id="ficha2">
-        <section>
-            <h2>A - Bíceps/Tríceps</h2>
-            <ul class="exercise-list">
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Bíceps martelo</span>
-                        <span class="exercise-details">4 séries x 12-15 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Tríceps testa com barra EZ</span>
-                        <span class="exercise-details">4 séries x 12-15 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Rosca 21 para bíceps</span>
-                        <span class="exercise-details">4 séries x 12-15 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Tríceps francês com halter</span>
-                        <span class="exercise-details">4 séries x 12-15 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Bíceps concentrado com halter</span>
-                        <span class="exercise-details">4 séries x 12-15 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Tríceps mergulho na máquina</span>
-                        <span class="exercise-details">4 séries x 12-15 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Supino declinado</span>
-                        <span class="exercise-details">4 séries x 12-15 repetições</span>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>B - Treino de Pernas</h2>
-            <ul class="exercise-list">
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Panturrilha em pé</span>
-                        <span class="exercise-details">4 séries x 15-20 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Panturrilha sentado</span>
-                        <span class="exercise-details">4 séries x 15-20 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Cadeira abdutora</span>
-                        <span class="exercise-details">4 séries x 12-15 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Cadeira extensora</span>
-                        <span class="exercise-details">4 séries x 12-15 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Agachamento livre</span>
-                        <span class="exercise-details">4 séries x 8-10 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Leg press 45</span>
-                        <span class="exercise-details">4 séries x 8-10 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Stiff</span>
-                        <span class="exercise-details">4 séries x 8-10 repetições</span>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>C - Ombros</h2>
-            <ul class="exercise-list">
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Aquecimento na polia</span>
-                        <span class="exercise-details">2 séries x 15-20 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Desenvolvimento com barra</span>
-                        <span class="exercise-details">4 séries x 8-10 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Elevação frontal com halter</span>
-                        <span class="exercise-details">4 séries x 10-12 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Crucifixo no cabo</span>
-                        <span class="exercise-details">4 séries x 10-12 repetições</span>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>D - Costa</h2>
-            <ul class="exercise-list">
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Pull-up (Barra Fixa)</span>
-                        <span class="exercise-details">4 séries x até a falha</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Remada curvada na barra livre</span>
-                        <span class="exercise-details">4 séries x 8-10 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Remada máquina, palma mão pra baixo</span>
-                        <span class="exercise-details">4 séries x 8-10 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Puxador triângulo</span>
-                        <span class="exercise-details">4 séries x 8-10 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Remada pegada neutra máquina</span>
-                        <span class="exercise-details">4 séries x 8-10 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Remada baixa triângulo</span>
-                        <span class="exercise-details">4 séries x 8-10 repetições</span>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>E - Peito</h2>
-            <ul class="exercise-list">
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Supino inclinado com halteres</span>
-                        <span class="exercise-details">4 séries x 8-10 repetições</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="exercise">
+    <main id="ficha2" class="container my-5">
+        <section class="my-3">
+            <h2 class="text-primary">A - Peito/Tríceps</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
                         <span class="exercise-name">Supino reto</span>
                         <span class="exercise-details">4 séries x 8-10 repetições</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
                     </div>
                 </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">Flyer</span>
-                        <span class="exercise-details">4 séries x 12-15 repetições</span>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Crucifixo inclinado </span>
+                        <span class="exercise-details">3 séries x 10-12 repetições</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
                     </div>
                 </li>
-                <li>
-                    <div class="exercise">
-                        <span class="exercise-name">CrossOver cabo</span>
-                        <span class="exercise-details">4 séries x 12 repetições + flexões até a falha</span>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Paralelas</span>
+                        <span class="exercise-details">3 séries x 10-12 repetições</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Tríceps testa</span>
+                        <span class="exercise-details">3 séries x 10-12 repetições</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
                     </div>
                 </li>
             </ul>
         </section>
-    </div>
+        <section class="my-3">
+            <h2 class="text-primary">B - Bíceps/Costas</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Barra fixa</span>
+                        <span class="exercise-details">4 séries x 8-10 repetições</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Remada curvada</span>
+                        <span class="exercise-details">3 séries x 10-12 repetições</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Rosca direta</span>
+                        <span class="exercise-details">3 séries x 10-12 repetições</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Rosca martelo</span>
+                        <span class="exercise-details">3 séries x 10-12 repetições</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="my-3">
+            <h2 class="text-primary">C - Pernas/Ombros</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Agachamento livre</span>
+                        <span class="exercise-details">4 séries x 8-10 repetições</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Leg press</span>
+                        <span class="exercise-details">3 séries x 10-12 repetições</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Desenvolvimento militar</span>
+                        <span class="exercise-details">3 séries x 10-12 repetições</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Elevação lateral</span>
+                        <span class="exercise-details">3 séries x 10-12 repetições</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="my-3">
+            <h2 class="text-primary">D - Descanso ativo</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Exércicios de mobilidade, alongamento ou cardio leve</span>
+                        <span class="exercise-details">20min a 30min</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="my-3">
+            <h2 class="text-primary">E - Braços/Abdômen</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Rosca alternada</span>
+                        <span class="exercise-details">3 séries x 10-12 repetições</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Tríceps corda</span>
+                        <span class="exercise-details">3 séries x 10-12 repetições</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Prancha abdomina</span>
+                        <span class="exercise-details">3 séries x 30-60 segundos</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="exercise-name">Abdominal infra</span>
+                        <span class="exercise-details">3 séries x 15-20 repetições</span>
+                        <i class="fas fa-chevron-down toggle-details"></i>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- Outras seções seguem o mesmo padrão -->
+    </main>
+    <section class="my-5 text-center">
+        <div>
+            <h2 class="text-primary">Minhas redes sociais</h2>
+            <p>Contato!</p>
+            <ul class="social-list list-inline">
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.instagram.com/kevindosreish/">
+                        <i class="fab fa-instagram fa-2x" style="color: #E4405F;"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.linkedin.com/in/kevin-hartwig-0a794724b/">
+                        <i class="fab fa-linkedin fa-2x" style="color: #0A66C2;"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Kevin dos Reis Harwig. Todos os direitos reservados.</p>
+        <p>
+            <a href="mailto:kevin@example.com" class="text-white">
+                <i class="fas fa-envelope" id="contato"></i> kevinreishartwig@gmail.com
+            </a>
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.list-group-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+                const details = item.querySelector('.exercise-details');
+                const icon = item.querySelector('.toggle-details');
+                if (details.style.display === 'none' || details.style.display === '') {
+                    details.style.display = 'block';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    details.style.display = 'none';
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+});
+
+        function buscarExercicio() {
+            const searchTerm = document.getElementById('search').value.toLowerCase();
+            const items = document.querySelectorAll('.list-group-item');
+            items.forEach(item => {
+                const exerciseName = item.querySelector('.exercise-name').textContent.toLowerCase();
+                if (exerciseName.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
+
 </html>
